@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'airbnb',
+    'eslint-config-airbnb',
     'plugin:eslint-comments/recommended',
    ].map(require.resolve),
   rules: {
