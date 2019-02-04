@@ -1,0 +1,10 @@
+{
+    "extends": [
+        "airbnb",
+        "plugin:eslint-comments/recommended"
+    ],
+    "rules": {
+        "no-console": "error",
+        "eslint-comments/no-unused-disable": "error"
+    }
+}
