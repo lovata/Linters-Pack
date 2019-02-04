@@ -1,12 +1,12 @@
 {
-  "name": "linter-configs-lovata",
+  "name": "eslint-config-lovata",
   "version": "1.2.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lovata/linter-configs-lovata.git"
+    "url": "git+https://github.com/lovata/eslint-config-lovata.git"
   },
   "keywords": [
     "linters",
@@ -15,7 +15,7 @@
   ],
   "author": "LOVATA",
   "license": "GPL-3.0",
-  "homepage": "https://github.com/lovata/linter-configs-lovata#readme",
+  "homepage": "https://github.com/lovata/eslint-config-lovata#readme",
   "dependencies": {
     "eslint": "^5.13.0",
     "eslint-config-airbnb": "^17.1.0",
