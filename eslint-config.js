@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'eslint-config-airbnb',
-    'plugin:eslint-comments/recommended',
+    'eslint-plugin-eslint-comments',
    ].map(require.resolve),
   rules: {
     'no-console': 'error',
