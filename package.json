@@ -1,5 +1,5 @@
 {
-  "name": "lovata-linters-pack",
+  "name": "eslint-config-lovata",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
