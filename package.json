@@ -1,0 +1,24 @@
+{
+  "name": "lovata-linters-pack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovata/Linters-Pack.git"
+  },
+  "keywords": [
+    "linters",
+    "eslint",
+    "stylelint"
+  ],
+  "author": "LOVATA",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/lovata/Linters-Pack#readme",
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-eslint-comments": "^3.0.1"
+  }
+}
