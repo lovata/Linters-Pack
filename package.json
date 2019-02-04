@@ -1,8 +1,7 @@
 {
   "name": "eslint-config-lovata",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "description": "LOVATA's ESLint and StyleLint configs",
-  "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
