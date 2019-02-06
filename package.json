@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lovata",
-  "version": "1.4.1",
+  "version": "1.5.1",
   "description": "LOVATA's ESLint and StyleLint configs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
