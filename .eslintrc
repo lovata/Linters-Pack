@@ -3,8 +3,30 @@
         "airbnb",
         "plugin:eslint-comments/recommended"
     ],
+    "plugins": [
+        "sonarjs"
+    ],
     "rules": {
         "no-console": "error",
-        "eslint-comments/no-unused-disable": "error"
+        "eslint-comments/no-unused-disable": "error",
+        "sonarjs/no-element-overwrite": "error",
+        "sonarjs/no-extra-arguments": "error",
+        "sonarjs/no-identical-conditions": "error",
+        "sonarjs/no-identical-expressions": "error",
+        "sonarjs/no-one-iteration-loop": "error",
+        "sonarjs/no-use-of-empty-return-value": "error",
+        "sonarjs/cognitive-complexity": ["error", 15],
+        "sonarjs/max-switch-cases": ["error", 10],
+        "sonarjs/no-duplicate-string": ["error", 3],
+        "sonarjs/no-duplicated-branches": "error",
+        "sonarjs/no-identical-functions": "error",
+        "sonarjs/no-inverted-boolean-check": "error",
+        "sonarjs/no-redundant-boolean": "error",
+        "sonarjs/no-small-switch": "error",
+        "sonarjs/no-useless-catch": "warn",
+        "sonarjs/prefer-immediate-return": "error",
+        "sonarjs/prefer-object-literal": "error",
+        "sonarjs/prefer-single-boolean-return": "error",
+        "sonarjs/prefer-while": "error"
     }
 }
