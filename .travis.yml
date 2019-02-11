@@ -1,12 +1,19 @@
 language: node_js
 branches:
-    only:
-    - master
+  only:
+  - master
 deploy:
-  provider: npm
-  email: account@lovata.com
-  api_key:
-    secure: U2b6HA2hCl4rpnHkHfCdXGxkRmRXDl9GGAXTEJrINRMfXnAdw7R/F4cxCaQLfQI6rYR3oc3GQXmxWVjykk4JJKmwWInInZWJO71sAbJQOrdWgRi1F4p6d7zzgFI5AsxQVI5IF9pZOoVy/RklHmSysP3L/BRz5griGzIaEDWCa6VZ+ow0PDoxr/HNN0WfkKXSNYYwceKoKOkzJxMoTyntM28FNX32sy5qXoNpNkMlP3X/BOngULzv43B0SC/OMQRN1ngVhqqlhV9LEgNt+0LS4Sht7+C3YZLOhIDsekwtKncNdG6ehBtLykwc91ne1ALFBf7xLxClZ5io4d0NdgT37k6I/x2moKzbjkdqkoLwwZgLhUgFUq3Eaz1RA32btCVTWErvBbJV/S4hWvYSFUILW19DllPAn3uOn/TeQIPl6Xb8cuwFhFJ0OMZO9YXO0V1wZscrPjcColDc/h3Trgc/2LMdIZQrp6CwAGdPOZ2tyOGS+Yvw8bsKgwyg2QduofgO58zhs+BUWBiXZHSKSWX/IbKXtCDKFHqmfQKH4MZR+Zai6u7r3EpCti0Je1MIQKtny1QzwFcso2zxWXpVlgCzUMhx1AjLTXFUWXlRTE1xJeSiTg6QzTNcS3oFbyiX/q1JEN5B25TShKh50etOCxXlJPmXxbxlvlgoKazWTddtovk=
-  skip_cleanup: true
-  on:
+  - provider: releases
+    api_key:
+      secure: ni9C0Lx5pksUI3G3nBK/4MFDm5+e2TMrYXWYdsnj47Zb5BGDWzDYqubaoXD57mksTxR7huwcLM16gP0GlZxA0FAoFLaLa3ieFHweezoOpOWvpUYwj5vPafhuZHJmcf1lkSA3Cu/iSgwqW0bPk00wjgW16ygWVETgVMY6kup71XYB2T6iWEU3q2EutH8y8rWTvXdCXntVIav5Vs+ydx3KuL5QMGAM6OS/XTGhnDI6miKlS5ZgGMUT8Uy+XA1LisrQTBaVKdN0drCTqEkD8Azg6Uo/jqZ461bUDWVcbNJCAR4/kgOQPTpeUJCnFcZhPlEOAEHh130VOcoOyRdL77FDfyXsvvb7Mmc2cMSwokITbdq0tYnTjIXlBAmWbuPRqXKQHMDZyUhjmXqa89NspVQ32pEeKUFt3fXWLZbrLc4zmgFVw3pclRdkD+vSZYrbVZqDn6txSpk4V8nNogAu81L25vtQk/JlJVDmNGNTTO3EasIts0Yj7RUjzBq8Z9Ae/84vRB02iXfvbvgPct7x0J/s0LmKK9W4Kdb3qmkWqNpHPHUG7wOYb2DC4Y8gkfYwQEGAtgOXVf3Svbklr888JR5wDhSCNcLDj6wr0x8kAab6CdC3hslKAc4GO+3hRizBXkB6XAaAmXTrbU/SWYXWD9yKH7vcdYYx4aXT/C6WMTfIACA=
+    on:
+      tags: true
+      repo: lovata/eslint-config-lovata
+  - provider: npm
+    email: account@lovata.com
+    api_key:
+      secure: U2b6HA2hCl4rpnHkHfCdXGxkRmRXDl9GGAXTEJrINRMfXnAdw7R/F4cxCaQLfQI6rYR3oc3GQXmxWVjykk4JJKmwWInInZWJO71sAbJQOrdWgRi1F4p6d7zzgFI5AsxQVI5IF9pZOoVy/RklHmSysP3L/BRz5griGzIaEDWCa6VZ+ow0PDoxr/HNN0WfkKXSNYYwceKoKOkzJxMoTyntM28FNX32sy5qXoNpNkMlP3X/BOngULzv43B0SC/OMQRN1ngVhqqlhV9LEgNt+0LS4Sht7+C3YZLOhIDsekwtKncNdG6ehBtLykwc91ne1ALFBf7xLxClZ5io4d0NdgT37k6I/x2moKzbjkdqkoLwwZgLhUgFUq3Eaz1RA32btCVTWErvBbJV/S4hWvYSFUILW19DllPAn3uOn/TeQIPl6Xb8cuwFhFJ0OMZO9YXO0V1wZscrPjcColDc/h3Trgc/2LMdIZQrp6CwAGdPOZ2tyOGS+Yvw8bsKgwyg2QduofgO58zhs+BUWBiXZHSKSWX/IbKXtCDKFHqmfQKH4MZR+Zai6u7r3EpCti0Je1MIQKtny1QzwFcso2zxWXpVlgCzUMhx1AjLTXFUWXlRTE1xJeSiTg6QzTNcS3oFbyiX/q1JEN5B25TShKh50etOCxXlJPmXxbxlvlgoKazWTddtovk=
+    skip_cleanup: true
+    on:
       tags: next
+      repo: lovata/eslint-config-lovata
