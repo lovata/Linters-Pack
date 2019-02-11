@@ -1,7 +1,7 @@
 language: node_js
 branches:
     only:
-    - feature/deploy
+    - master
 deploy:
   provider: npm
   email: account@lovata.com
@@ -9,4 +9,4 @@ deploy:
     secure: U2b6HA2hCl4rpnHkHfCdXGxkRmRXDl9GGAXTEJrINRMfXnAdw7R/F4cxCaQLfQI6rYR3oc3GQXmxWVjykk4JJKmwWInInZWJO71sAbJQOrdWgRi1F4p6d7zzgFI5AsxQVI5IF9pZOoVy/RklHmSysP3L/BRz5griGzIaEDWCa6VZ+ow0PDoxr/HNN0WfkKXSNYYwceKoKOkzJxMoTyntM28FNX32sy5qXoNpNkMlP3X/BOngULzv43B0SC/OMQRN1ngVhqqlhV9LEgNt+0LS4Sht7+C3YZLOhIDsekwtKncNdG6ehBtLykwc91ne1ALFBf7xLxClZ5io4d0NdgT37k6I/x2moKzbjkdqkoLwwZgLhUgFUq3Eaz1RA32btCVTWErvBbJV/S4hWvYSFUILW19DllPAn3uOn/TeQIPl6Xb8cuwFhFJ0OMZO9YXO0V1wZscrPjcColDc/h3Trgc/2LMdIZQrp6CwAGdPOZ2tyOGS+Yvw8bsKgwyg2QduofgO58zhs+BUWBiXZHSKSWX/IbKXtCDKFHqmfQKH4MZR+Zai6u7r3EpCti0Je1MIQKtny1QzwFcso2zxWXpVlgCzUMhx1AjLTXFUWXlRTE1xJeSiTg6QzTNcS3oFbyiX/q1JEN5B25TShKh50etOCxXlJPmXxbxlvlgoKazWTddtovk=
   skip_cleanup: true
   on:
-      tags: true
+      tags: next
