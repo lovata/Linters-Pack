@@ -1,7 +1,7 @@
 language: node_js
 branches:
     only:
-    - master
+    - feature/deploy
 deploy:
   provider: npm
   email: account@lovata.com
