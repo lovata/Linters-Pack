@@ -1,7 +1,4 @@
 language: node_js
-branches:
-  only:
-  - master
 deploy:
   - provider: releases
     api_key:
