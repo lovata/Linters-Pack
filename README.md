@@ -9,6 +9,7 @@ This package provides LOVATA's ESLint and StyleLint shared configs.
 <!-- TOC depthFrom:2 -->
 
 - [Installation](#installation)
+- [Usage](#usage)
 - [StyleLint](#stylelint)
     - [1. Setup StyleLint config file](#1-setup-stylelint-config-file)
     - [2. Add npm script for linting CSS](#2-add-npm-script-for-linting-css)
@@ -25,6 +26,8 @@ This package provides LOVATA's ESLint and StyleLint shared configs.
 ```bash
 npm install --save-dev eslint-config-lovata
 ```
+
+## Usage
 
 Configs in the package provide a list of rules that can be overwritten by your project's config options. Note that each lint tool **must be configured separately**.
 
