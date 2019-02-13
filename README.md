@@ -20,6 +20,8 @@ This package provides LOVATA's [ESLint](https://eslint.org/) and [StyleLint](htt
     - [3. Add npm script for linting JS](#3-add-npm-script-for-linting-js)
     - [4. Setup webpack config](#4-setup-webpack-config)
 - [Full list of dependencies and plugins](#full-list-of-dependencies-and-plugins)
+    - [StyleLint packages](#stylelint-packages)
+    - [Eslint packages](#eslint-packages)
 
 <!-- /TOC -->
 
@@ -183,16 +185,26 @@ const isLocal = process.env.LOCAL_DEV || false;
 And don't forget to add `LOCAL_DEV` environment variable to your npm script for local development:
 
 ```javascript
-"scripts":{
+"scripts": {
   "dev": "cross-env NODE_ENV=development LOCAL_DEV=local ./node_modules/.bin/webpack --watch",
 }
 ```
 
-*Note: It is recommended to use [`cross-env`](https://www.npmjs.com/package/cross-env) package for scripts with environment variables*
+*Note: It is recommended to use [`cross-env`](https://www.npmjs.com/package/cross-env) package for scripts with environment variables. Run `npm install cross-env --save-dev` to install the package.*
 
 ## Full list of dependencies and plugins
 
-- StyleLint ![Eslint](https://img.shields.io/npm/dependency-version/eslint-config-lovata/stylelint.svg?style=flat)
-- Eslint ![Eslint](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint.svg?style=flat)
+### StyleLint packages
 
-It based on [Airbnb's ESLint config](https://www.npmjs.com/package/eslint-config-airbnb) npm package
+![Eslint](https://img.shields.io/npm/dependency-version/eslint-config-lovata/stylelint.svg?style=flat)
+
+### Eslint packages
+
+![Eslint](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint.svg?style=flat) ![eslint-config-airbnb](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-config-airbnb.svg?style=flat) ![eslint-plugin-import](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-import.svg?style=flat) ![eslint-plugin-jsx-a11y](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-jsx-a11y.svg?style=flat) ![eslint-plugin-react](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-react.svg?style=flat) ![eslint-plugin-sonarjs](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-sonarjs.svg?style=flat)
+
+- [Airbnb's ESLint config](https://www.npmjs.com/package/eslint-config-airbnb). See their [JavaScript Style Guide](https://github.com/airbnb/javascript) for rules explanation
+- Plugins:
+  - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) - linting of ES2015+ (ES6+) import/export syntax, and prevent issues with misspelling of file paths and import names (required by `eslint-config-airbnb`)
+  - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - static AST checker for accessibility rules on JSX elements (required by `eslint-config-airbnb`)
+  - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - React specific linting rules (required by `eslint-config-airbnb`)
+  - [eslint-plugin-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs) - detecting bugs and suspicious patterns in the code using static code analyser [SonarJS](https://github.com/SonarSource/SonarJS)
