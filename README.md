@@ -2,7 +2,7 @@
 
 ![NPM Version](https://img.shields.io/npm/v/eslint-config-lovata.svg?style=flat) [![Build Status](https://travis-ci.com/lovata/eslint-config-lovata.svg?branch=master)](https://travis-ci.com/lovata/eslint-config-lovata) ![Dependencies](https://img.shields.io/librariesio/github/lovata/eslint-config-lovata.svg?style=flat)
 
-This package provides LOVATA's [ESLint](https://eslint.org/) and [StyleLint](https://stylelint.io/) shared configs. It includes a list of plugins and defined rules for each linter tool.
+This package provides LOVATA's [ESLint](https://eslint.org/) and [StyleLint](https://stylelint.io/) shared configs. It includes a list of plugins and defined rules for each linter tool
 
 **Quick Jump** 
 
@@ -37,7 +37,7 @@ npm install --save-dev eslint-config-lovata
 
 ## Usage
 
-Configs in the package provide a list of rules that can be overwritten by your project's config options. Note that each lint tool **must be configured separately**.
+Configs in the package provide a list of rules that can be overwritten by your project's configs. Note that each lint tool **must be configured separately**.
 
 Check out the example of how to use provided configs in [LOVATA's October CMS Starter Kit on Laravel Mix](https://github.com/lovata/octobercms-starter-kit-laravel-mix) repo.
 
@@ -78,7 +78,7 @@ To make project's linting for CSS available via `npm run lint:css`, update your 
 
 ### 3. Setup webpack config
 
-There is [`stylelint-webpack-plugin`](https://github.com/webpack-contrib/stylelint-webpack-plugin) to help you with linting CSS while you develop. Install the plugin to your project:
+There is [`stylelint-webpack-plugin`](https://github.com/webpack-contrib/stylelint-webpack-plugin) to help you with linting CSS while you develop. Install the plugin into your project:
 
 ```bash
 npm install stylelint-webpack-plugin --save-dev
@@ -123,7 +123,7 @@ Add `.eslintrc` file in the root of your project with the following settings:
 
 ### 2. Setup local developer's ESLint config file
 
-Some of the rules in this config are "too strict" to be comfortable with when you are doing something locally on your machine. Something that is not supposed to be in the repo, but you'd like to have it for a while before commit. It could be because you are debugging something, or you want to check as quick as possible if the idea is working.
+Some of the rules in this config are "too strict" to be comfortable with when you are doing something locally on your machine. Something that is not supposed to be in the repo, but you'd like to have it for a while before commit. It could be because you are debugging, or you want to check as quick as possible if the idea is working.
 
 For example, `console.log()` is not allowed in this config and will throw an error [`no-console`](https://eslint.org/docs/rules/no-console). If you'd like to allow to do not-so-dangerous-but-useful things locally, you may create another config file, extend project's "too strict" config and decrease the rules from `error` to `warn` level.
 
@@ -149,7 +149,7 @@ To make project's linting for JS available via `npm run lint:js`, update your `p
 
 ```javascript
 "scripts": {
-    "lint:js": "./node_modules/.bin/eslint ./**/*.js --fix"
+  "lint:js": "./node_modules/.bin/eslint ./**/*.js --fix"
 }
 ```
 
@@ -157,7 +157,7 @@ To make project's linting for JS available via `npm run lint:js`, update your `p
 
 ### 4. Setup webpack config
 
-There is [`eslint-loader`](https://github.com/webpack-contrib/eslint-loader) package to help you with linting JS while you develop. Install to your project:
+There is [`eslint-loader`](https://github.com/webpack-contrib/eslint-loader) package to help you with linting JS while you develop. Install it to your project:
 
 ```bash
 npm install eslint-loader --save-dev
@@ -182,15 +182,17 @@ const isLocal = process.env.LOCAL_DEV || false;
 
 *For more loader's options go to [eslint-loader Github page](https://github.com/webpack-contrib/eslint-loader#options).*
 
-And don't forget to add `LOCAL_DEV` environment variable to your npm script for local development:
+And don't forget to add `LOCAL_DEV` environment variable to your npm script for local development script:
 
 ```javascript
 "scripts": {
-  "dev": "cross-env NODE_ENV=development LOCAL_DEV=local ./node_modules/.bin/webpack --watch",
+  "dev:watch": "cross-env NODE_ENV=development LOCAL_DEV=local ./node_modules/.bin/webpack --watch",
 }
 ```
 
 *Note: It is recommended to use [`cross-env`](https://www.npmjs.com/package/cross-env) package for scripts with environment variables. Run `npm install cross-env --save-dev` to install the package.*
+
+*Note: DO NOT use `.local.eslintrc` for any other cases then local development. For any builds, linting scripts, git hooks, etc. use `.eslintrc` config.*
 
 ## Full list of dependencies and plugins
 
@@ -207,4 +209,4 @@ And don't forget to add `LOCAL_DEV` environment variable to your npm script for 
   - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) - linting of ES2015+ (ES6+) import/export syntax, and prevent issues with misspelling of file paths and import names (required by `eslint-config-airbnb`)
   - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - static AST checker for accessibility rules on JSX elements (required by `eslint-config-airbnb`)
   - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - React specific linting rules (required by `eslint-config-airbnb`)
-  - [eslint-plugin-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs) - detecting bugs and suspicious patterns in the code using static code analyser [SonarJS](https://github.com/SonarSource/SonarJS)
+  - [eslint-plugin-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs) - detecting bugs and suspicious patterns in the code using static code analyser [SonarJS](https://github.com/SonarSource/SonarJS) rules
