@@ -1,11 +1,5 @@
 language: node_js
 deploy:
-  - provider: releases
-    api_key:
-      secure: ni9C0Lx5pksUI3G3nBK/4MFDm5+e2TMrYXWYdsnj47Zb5BGDWzDYqubaoXD57mksTxR7huwcLM16gP0GlZxA0FAoFLaLa3ieFHweezoOpOWvpUYwj5vPafhuZHJmcf1lkSA3Cu/iSgwqW0bPk00wjgW16ygWVETgVMY6kup71XYB2T6iWEU3q2EutH8y8rWTvXdCXntVIav5Vs+ydx3KuL5QMGAM6OS/XTGhnDI6miKlS5ZgGMUT8Uy+XA1LisrQTBaVKdN0drCTqEkD8Azg6Uo/jqZ461bUDWVcbNJCAR4/kgOQPTpeUJCnFcZhPlEOAEHh130VOcoOyRdL77FDfyXsvvb7Mmc2cMSwokITbdq0tYnTjIXlBAmWbuPRqXKQHMDZyUhjmXqa89NspVQ32pEeKUFt3fXWLZbrLc4zmgFVw3pclRdkD+vSZYrbVZqDn6txSpk4V8nNogAu81L25vtQk/JlJVDmNGNTTO3EasIts0Yj7RUjzBq8Z9Ae/84vRB02iXfvbvgPct7x0J/s0LmKK9W4Kdb3qmkWqNpHPHUG7wOYb2DC4Y8gkfYwQEGAtgOXVf3Svbklr888JR5wDhSCNcLDj6wr0x8kAab6CdC3hslKAc4GO+3hRizBXkB6XAaAmXTrbU/SWYXWD9yKH7vcdYYx4aXT/C6WMTfIACA=
-    on:
-      tags: true
-      repo: lovata/eslint-config-lovata
   - provider: npm
     email: account@lovata.com
     api_key:
