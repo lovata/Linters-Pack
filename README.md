@@ -53,7 +53,7 @@ Add `.stylelintrc` file in the root of your project with the following settings:
 
 ```javascript
 {
-  "extends": ["eslint-config-lovata/.stylelintrc.yml"],
+  "extends": ["eslint-config-lovata/.stylelintrc"],
   "rules": {
       // Your override rules (stylelint.io/user-guide/rules/)
   }
@@ -198,7 +198,9 @@ And don't forget to add `LOCAL_DEV` environment variable to your npm script for 
 
 ### StyleLint packages
 
-![Eslint](https://img.shields.io/npm/dependency-version/eslint-config-lovata/stylelint.svg?style=flat)
+![StyleLint](https://img.shields.io/npm/dependency-version/eslint-config-lovata/stylelint.svg?style=flat) ![stylelint-a11y](https://img.shields.io/npm/dependency-version/eslint-config-lovata/stylelint-a11y.svg?style=flat)
+
+- [stylelint-a11y](https://www.npmjs.com/package/stylelint-a11y) - accessibility rules
 
 ### Eslint packages
 
