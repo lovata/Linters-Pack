@@ -154,7 +154,7 @@ rules:
   declaration-property-value-blacklist:
     -
       border:
-        - /0/
+        - /^0/
       src:
         - /.eot/
         - /.ttf/
