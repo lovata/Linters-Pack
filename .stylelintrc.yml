@@ -325,11 +325,7 @@ rules:
   ## Possible errors
   comment-no-empty: true
   ## Limit language features
-  comment-word-blacklist:
-    -
-      - /^TODO:/
-      - /^FIXME:/
-    - severity: warning
+  # DISABLED comment-word-blacklist
   ## Stylistic issues
   comment-empty-line-before:
     - always
