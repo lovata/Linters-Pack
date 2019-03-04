@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lovata",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "LOVATA's ESLint and StyleLint configs",
   "repository": {
     "type": "git",

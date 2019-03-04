@@ -24,7 +24,7 @@
         "sonarjs/no-redundant-boolean": "error",
         "sonarjs/no-small-switch": "error",
         "sonarjs/no-useless-catch": "warn",
-        "sonarjs/prefer-immediate-return": "error",
+        "sonarjs/prefer-immediate-return": "off",
         "sonarjs/prefer-object-literal": "error",
         "sonarjs/prefer-single-boolean-return": "error",
         "sonarjs/prefer-while": "error"
