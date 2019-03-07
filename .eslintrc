@@ -3,7 +3,8 @@
     "plugins": [
         "eslint-comments",
         "sonarjs",
-        "unicorn"
+        "unicorn",
+        "no-use-extend-native"
     ],
     "rules": {
         "no-console": "error",
@@ -65,6 +66,7 @@
         "unicorn/prefer-query-selector": "error",
         "unicorn/prefer-node-remove": "off",
         "unicorn/prefer-text-content": "off",
-        "unicorn/no-for-loop": "off"
+        "unicorn/no-for-loop": "off",
+        "no-use-extend-native/no-use-extend-native": "error"
     }
 }

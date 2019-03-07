@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lovata",
-  "version": "1.10.1",
+  "version": "1.11.0",
   "description": "LOVATA's ESLint and StyleLint configs",
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "eslint-plugin-eslint-comments": "^3.0.1",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-no-use-extend-native": "^0.4.0",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-sonarjs": "^0.2.0",
     "eslint-plugin-unicorn": "^7.1.0",
