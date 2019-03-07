@@ -202,9 +202,11 @@ And don't forget to add `LOCAL_DEV` environment variable to your npm script for 
 
 - [stylelint-a11y](https://www.npmjs.com/package/stylelint-a11y) - accessibility rules
 
+See [.stylelintrc.yml](https://github.com/lovata/eslint-config-lovata/blob/master/.stylelintrc.yml) for StyleLint settings. Full list of plugins' rules is available in [.stylelintrc](https://github.com/lovata/eslint-config-lovata/blob/master/.stylelintrc) config file.
+
 ### Eslint packages
 
-![Eslint](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint.svg?style=flat) ![eslint-config-airbnb](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-config-airbnb.svg?style=flat) ![eslint-plugin-import](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-import.svg?style=flat) ![eslint-plugin-jsx-a11y](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-jsx-a11y.svg?style=flat) ![eslint-plugin-react](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-react.svg?style=flat) ![eslint-plugin-eslint-comments](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-eslint-comments.svg?style=flat) ![eslint-plugin-sonarjs](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-sonarjs.svg?style=flat)
+![Eslint](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint.svg?style=flat) ![eslint-config-airbnb](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-config-airbnb.svg?style=flat) ![eslint-plugin-import](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-import.svg?style=flat) ![eslint-plugin-jsx-a11y](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-jsx-a11y.svg?style=flat) ![eslint-plugin-react](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-react.svg?style=flat) ![eslint-plugin-eslint-comments](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-eslint-comments.svg?style=flat) ![eslint-plugin-sonarjs](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-sonarjs.svg?style=flat) ![eslint-plugin-sonarjs](https://img.shields.io/npm/dependency-version/eslint-config-lovata/eslint-plugin-unicorn.svg?style=flat)
 
 - [Airbnb's ESLint config](https://www.npmjs.com/package/eslint-config-airbnb). See their [JavaScript Style Guide](https://github.com/airbnb/javascript) for rules explanation
 - Plugins:
@@ -213,3 +215,6 @@ And don't forget to add `LOCAL_DEV` environment variable to your npm script for 
   - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - React specific linting rules (required by `eslint-config-airbnb`)
   - [eslint-plugin-eslint-comments](https://www.npmjs.com/package/eslint-plugin-eslint-comments) - linting ESLint directive comments
   - [eslint-plugin-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs) - detecting bugs and suspicious patterns in the code using static code analyser [SonarJS](https://github.com/SonarSource/SonarJS) rules
+  - [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn) - various ESLint rules created by [XO](https://github.com/xojs)
+
+  Full list of ESLint plugins' rules is available in [.eslintrc](https://github.com/lovata/eslint-config-lovata/blob/master/.eslintrc) config file.
