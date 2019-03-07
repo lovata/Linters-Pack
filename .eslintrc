@@ -15,7 +15,7 @@
         "eslint-comments/no-unused-enable": "error",
         "eslint-comments/no-restricted-disable": "off",
         "eslint-comments/no-use": "off",
-        "eslint-comments/no-all-duplicated-branches": "error",
+        "sonarjs/no-all-duplicated-branches": "error",
         "sonarjs/no-element-overwrite": "error",
         "sonarjs/no-extra-arguments": "error",
         "sonarjs/no-identical-conditions": "error",
@@ -63,8 +63,8 @@
         "unicorn/no-unused-properties": "off",
         "unicorn/prefer-node-append": "error",
         "unicorn/prefer-query-selector": "error",
-        "unicorn/prefer-node-remove": "error",
-        "unicorn/prefer-text-content": "error",
+        "unicorn/prefer-node-remove": "off",
+        "unicorn/prefer-text-content": "off",
         "unicorn/no-for-loop": "off"
     }
 }

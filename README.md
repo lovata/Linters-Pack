@@ -1,6 +1,6 @@
 # eslint-config-lovata
 
-![NPM Version](https://img.shields.io/npm/v/eslint-config-lovata.svg?style=flat) [![Build Status](https://travis-ci.com/lovata/eslint-config-lovata.svg?branch=master)](https://travis-ci.com/lovata/eslint-config-lovata) ![Dependencies](https://img.shields.io/librariesio/github/lovata/eslint-config-lovata.svg?style=flat)
+[![NPM Version](https://img.shields.io/npm/v/eslint-config-lovata.svg?style=flat)](https://www.npmjs.com/package/eslint-config-lovata) [![Build Status](https://travis-ci.com/lovata/eslint-config-lovata.svg?branch=master)](https://travis-ci.com/lovata/eslint-config-lovata) ![Dependencies](https://img.shields.io/librariesio/github/lovata/eslint-config-lovata.svg?style=flat)
 
 This package provides LOVATA's [ESLint](https://eslint.org/) and [StyleLint](https://stylelint.io/) shared configs. It includes a list of plugins and defined rules for each linter tool
 
