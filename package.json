@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lovata",
-  "version": "1.9.1",
+  "version": "1.10.0",
   "description": "LOVATA's ESLint and StyleLint configs",
   "repository": {
     "type": "git",
@@ -9,7 +9,9 @@
   "keywords": [
     "linters",
     "eslint",
-    "stylelint"
+    "eslint-config",
+    "stylelint",
+    "stylelint-config"
   ],
   "author": "LOVATA",
   "license": "GPL-3.0",
