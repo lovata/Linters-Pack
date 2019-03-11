@@ -2,7 +2,8 @@
   "extends": "./.stylelintrc.yml",
   "plugins": [
     "stylelint-a11y",
-    "stylelint-high-performance-animation"
+    "stylelint-high-performance-animation",
+    "stylelint-value-no-unknown-custom-properties"
   ],
   "rules": {
     "a11y/content-property-no-static-value": true,
@@ -17,6 +18,7 @@
     "a11y/no-outline-none": true,
     "a11y/no-text-align-justify": true,
     "a11y/selector-pseudo-class-focus": true,
-    "plugin/no-low-performance-animation-properties": true
+    "plugin/no-low-performance-animation-properties": true,
+    "csstools/value-no-unknown-custom-properties": null
   }
 }
