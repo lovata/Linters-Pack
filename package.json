@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lovata",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "description": "LOVATA's ESLint and StyleLint configs",
   "repository": {
     "type": "git",
@@ -16,6 +16,10 @@
   "author": "LOVATA",
   "license": "GPL-3.0",
   "homepage": "https://github.com/lovata/eslint-config-lovata#readme",
+  "scripts": {
+      "lint:css": "./node_modules/.bin/stylelint sample.css",
+      "lint:js": "./node_modules/.bin/eslint sample.js"
+  },
   "dependencies": {
     "eslint": "^5.13.0",
     "eslint-config-airbnb": "^17.1.0",

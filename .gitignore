@@ -129,7 +129,6 @@ GitHub.sublime-settings
 # ------------------------------
 
 .vscode/*
-!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
@@ -216,3 +215,11 @@ tmp*
 *.~*
 *.bak
 *.swp
+
+
+# ------------------------------
+# FOR eslint-config-lovata ONLY
+# ------------------------------
+
+*.css
+*.js
