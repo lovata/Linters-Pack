@@ -198,9 +198,11 @@ And don't forget to add `LOCAL_DEV` environment variable to your npm script for 
 
 ### StyleLint packages
 
-![StyleLint](https://img.shields.io/npm/dependency-version/eslint-config-lovata/stylelint.svg?style=flat) ![stylelint-a11y](https://img.shields.io/npm/dependency-version/eslint-config-lovata/stylelint-a11y.svg?style=flat)
+![StyleLint](https://img.shields.io/npm/dependency-version/eslint-config-lovata/stylelint.svg?style=flat) ![stylelint-a11y](https://img.shields.io/npm/dependency-version/eslint-config-lovata/stylelint-a11y.svg?style=flat) ![stylelint-high-performance-animation](https://img.shields.io/npm/dependency-version/eslint-config-lovata/stylelint-high-performance-animation.svg?style=flat) ![stylelint-value-no-unknown-custom-properties](https://img.shields.io/npm/dependency-version/eslint-config-lovata/stylelint-value-no-unknown-custom-properties.svg?style=flat)
 
 - [stylelint-a11y](https://www.npmjs.com/package/stylelint-a11y) - accessibility rules
+- [stylelint-high-performance-animation](https://www.npmjs.com/package/stylelint-high-performance-animation) - preventing the use of low performance animation and transition properties
+- [stylelint-value-no-unknown-custom-properties](https://www.npmjs.com/package/stylelint-value-no-unknown-custom-properties) - disallow usage of unknown custom properties
 
 See [.stylelintrc.yml](https://github.com/lovata/eslint-config-lovata/blob/master/.stylelintrc.yml) for StyleLint settings. Full list of plugins' rules is available in [.stylelintrc](https://github.com/lovata/eslint-config-lovata/blob/master/.stylelintrc) config file.
 
