@@ -174,7 +174,7 @@ rules:
       /^stroke/:
         - /^var\(--color\-|^inherit$/
       /font-family/:
-        - /^var\(--font-family-/
+        - /^var\(--font-family-|^inherit$/
       /font-size/:
         - /^var\(--font-size-|^inherit$/
       /line-height/:
@@ -185,7 +185,7 @@ rules:
         - /^var\(--shadow-|^none/
       /text-shadow/:
         - /^var\(--shadow-|^none/
-    - message: "It's allowed to use only \"var(--var)\" for different color (--color-NAME); font (--font-family-NAME, --font-size-NAME); line height (--line-height-NAME); border radius (--border-radius-NAME); and shadows (--shadow-NAME) props. You CAN use 'inherit' for colors, font-size and line-height. You CAN use 'none' for border-radius and shadows"
+    - message: "It's allowed to use only \"var(--var)\" for different color (--color-NAME); font (--font-family-NAME, --font-size-NAME); line height (--line-height-NAME); border radius (--border-radius-NAME); and shadows (--shadow-NAME) props. You CAN use 'inherit' for colors, font-size, font-family and line-height. You CAN use 'none' for border-radius and shadows"
   ## Stylistic issues
   declaration-bang-space-after: never
   declaration-bang-space-before: always
