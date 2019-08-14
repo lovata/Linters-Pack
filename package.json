@@ -32,7 +32,6 @@
     "eslint-plugin-unicorn": "^7.1.0",
     "stylelint": "^9.10.1",
     "stylelint-a11y": "^1.1.10",
-    "stylelint-high-performance-animation": "^1.1.1",
     "stylelint-value-no-unknown-custom-properties": "^2.0.0"
   }
 }
