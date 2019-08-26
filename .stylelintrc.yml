@@ -168,23 +168,19 @@ rules:
   declaration-property-value-whitelist:
     -
       /color/:
-        - /^var\(--color\-|^inherit$/
+        - /^var\(|^inherit$|^white$|^black$|^transparent$/
       /^fill/:
-        - /^var\(--color\-|^inherit$/
+        - /^var\(|^inherit$|^white$|^black$|^transparent$|^currentColor$/
       /^stroke/:
-        - /^var\(--color\-|^inherit$/
+        - /^var\(|^inherit$|^white$|^black$|^transparent$|^currentColor$/
       /font-family/:
-        - /^var\(--font-family-|^inherit$/
+        - /^var\(|^inherit$/
       /font-size/:
-        - /^var\(--font-size-|^inherit$/
+        - /^var\(|^inherit$/
       /line-height/:
-        - /^var\(--line-height-|^inherit$/
+        - /^var\(|^inherit$/
       /border-radius/:
-        - /^var\(--border-radius-|^none$/
-      /box-shadow/:
-        - /^var\(--shadow-|^none/
-      /text-shadow/:
-        - /^var\(--shadow-|^none/
+        - /^var\(|^none$/
     - message: "It's allowed to use only \"var(--var)\" for different color (--color-NAME); font (--font-family-NAME, --font-size-NAME); line height (--line-height-NAME); border radius (--border-radius-NAME); and shadows (--shadow-NAME) props. You CAN use 'inherit' for colors, font-size, font-family and line-height. You CAN use 'none' for border-radius and shadows"
   ## Stylistic issues
   declaration-bang-space-after: never
